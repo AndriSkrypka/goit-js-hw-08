@@ -27,3 +27,4 @@ function createGallery(galleryItems) {
     })
     .join('');
 }
+// --11111
