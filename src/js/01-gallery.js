@@ -1,7 +1,8 @@
 // Add imports above this line
 import { galleryItems } from './gallery-items';
 import SimpleLightbox from 'simplelightbox';
-import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.esm';
+
+import 'simplelightbox/dist/simple-lightbox.min.css';
 // Change code below this line
 
 // console.log(galleryItems);
@@ -27,4 +28,9 @@ function createGallery(galleryItems) {
     })
     .join('');
 }
+
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
 // --11111
